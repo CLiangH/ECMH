@@ -67,7 +67,7 @@ def tonelli(n, p):#参考：https://blog.csdn.net/weixin_44617902/article/detail
     def legendre(a, p): 
         return pow(a, (p - 1) // 2, p)
 
-    if(legendre(n, p) == 1):
+    if(legendre(n, p) != 1):
         return -1
     q = p - 1
     s = 0
